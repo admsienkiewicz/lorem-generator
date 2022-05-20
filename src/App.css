@@ -1,0 +1,12 @@
+section {
+  width: 90vw;
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: grid;
+  place-items: center;
+}
+
+p {
+  text-align: justify;
+}
