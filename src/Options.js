@@ -1,4 +1,6 @@
 import React from 'react'
+import { CustomSelector } from './CustomSelector/CustomSelector'
+import { NumberInput } from './NumberInput/NumberInput'
 
 export const Options = ({
   count,
@@ -12,45 +14,30 @@ export const Options = ({
   setHtmlTag,
 }) => {
   return (
-    <form onSubmit={(e) => generateText(e)}>
-      <input
-        type="number"
-        name="number"
-        id="number"
-        value={count}
-        onChange={(e) => {
-          if (e.target.value >= 0) setCount(e.target.value)
-        }}
+    <div className="options-form">
+      <NumberInput count={count} setCount={setCount} />
+      <CustomSelector
+        placeholder="Select type"
+        options={['Paragraphs', 'Sentences', 'Words']}
+        setState={setGeneratorType}
+        state={generatorType}
+        className="type-select"
       />
-      <select
-        id="generator-type"
-        defaultValue={generatorType}
-        onChange={(e) => setGeneratorType(e.target.value)}
+      <span> HTML tag:</span>
+      <CustomSelector
+        placeholder="Select tag"
+        options={['None', 'p', 'h1', 'h2', 'h3', 'h4']}
+        setState={setHtmlTag}
+        state={htmlTag}
+        id="tag-select"
+      />
+      <button
+        className="generate-btn"
+        type="submit"
+        onClick={(e) => generateText(e)}
       >
-        <option value="Paragraphs">Paragraphs</option>
-        <option value="Sentences">Sentences</option>
-        <option value="Words">Words</option>
-      </select>
-      <select
-        defaultValue={includeTags}
-        onChange={(e) => setIncludeTags(e.target.value)}
-      >
-        <option value={'yes'}>yes</option>
-        <option value={'no'}>no</option>
-      </select>
-      {includeTags === 'yes' && (
-        <select
-          defaultValue={htmlTag}
-          onChange={(e) => setHtmlTag(e.target.value)}
-        >
-          <option value={'p'}>p</option>
-          <option value={'h1'}>h1</option>
-          <option value={'h2'}>h2</option>
-          <option value={'h3'}>h3</option>
-          <option value={'h4'}>h4</option>
-        </select>
-      )}
-      <button type="submit">Generate</button>
-    </form>
+        Generate
+      </button>
+    </div>
   )
 }

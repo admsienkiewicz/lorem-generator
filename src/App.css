@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 section {
   width: 90vw;
   max-width: 40rem;
@@ -5,8 +6,63 @@ section {
   margin-top: 5rem;
   display: grid;
   place-items: center;
+  border: 1px solid red;
 }
 
-p {
+.options-form {
+  background-color: #4198a9;
+  display: flex;
+  max-height: 50px;
+  flex-wrap: wrap;
+
+  padding: 2px;
+  justify-content: space-between;
+}
+
+#number {
+  max-height: 44px;
+  width: 50px;
+  text-align: center;
+  margin-right: 1em;
+}
+.generate-btn {
+  height: 50px;
+  width: 70px;
+  text-align: center;
+}
+
+input[type='number'] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.output-container {
   text-align: justify;
+  padding: 10px;
+  border: 1px solid red;
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+
+.select-box {
+  margin-right: 1em;
+}
+
+@media only screen and (max-width: 500px) {
+  .options-form {
+    position: relative;
+    min-height: 110px;
+  }
+  .generate-btn {
+    position: absolute;
+    min-width: 30%;
+    top: 58px;
+    left: 35%;
+  }
 }
