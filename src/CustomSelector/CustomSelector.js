@@ -5,7 +5,7 @@ export const CustomSelector = ({ placeholder, options, setState, state }) => {
   const [activeOptions, setActiveOptions] = useState(false)
 
   return (
-    <div className="select-box">
+    <div className={`select-box ${placeholder}`}>
       {activeOptions && (
         <div className="options-container">
           {options.map((option, index) => {

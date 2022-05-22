@@ -6,10 +6,6 @@
   height: 100%;
 }
 
-.select-box {
-  margin-right: 1em;
-}
-
 .select-box .options-container {
   background-color: #2aa2ce;
   color: #f5f6fa;
@@ -67,4 +63,38 @@
 
 .select-box .option .radio {
   display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .tag .selected,
+  .tag .options-container {
+    width: 50px;
+  }
+  .select-box.tag {
+    width: 50px;
+  }
+  .type .selected,
+  .type .options-container {
+    width: 90px;
+  }
+  .select-box.type {
+    width: 90px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .tag .selected,
+  .tag .options-container {
+    width: 70px;
+  }
+  .select-box.tag {
+    width: 70px;
+  }
+  .type .selected,
+  .type .options-container {
+    width: 90px;
+  }
+  .select-box.type {
+    width: 90px;
+  }
 }

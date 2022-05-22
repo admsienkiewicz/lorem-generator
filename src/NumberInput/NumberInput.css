@@ -2,7 +2,7 @@
   width: 62px;
   display: flex;
   max-height: 50px;
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
 
 input[type='number'] {
