@@ -1,0 +1,65 @@
+.options-form {
+  position: relative;
+  display: flex;
+  max-height: 50px;
+  flex-wrap: wrap;
+  padding: 2px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.generate-btn {
+  height: 55px;
+  width: 100px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #ff8484;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.generate-btn:hover {
+  background-color: #f27171;
+}
+
+input[type='number'] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+span {
+  color: #3dc0ee;
+  font-size: 18px;
+  font-weight: 650;
+  position: relative;
+  top: 13px;
+}
+
+@media only screen and (max-width: 580px) {
+  .options-form {
+    position: relative;
+    min-height: 110px;
+    align-items: baseline;
+  }
+  .generate-btn {
+    position: absolute;
+    min-width: 30%;
+    top: 65px;
+    left: 35%;
+  }
+  span {
+    position: static;
+    color: #3dc0ee;
+    font-size: 14px;
+    font-weight: 650;
+  }
+}

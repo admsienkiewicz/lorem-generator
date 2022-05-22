@@ -1,6 +1,7 @@
 import React from 'react'
-import { CustomSelector } from './CustomSelector/CustomSelector'
-import { NumberInput } from './NumberInput/NumberInput'
+import { CustomSelector } from '../CustomSelector/CustomSelector'
+import { NumberInput } from '../NumberInput/NumberInput'
+import './Options.css'
 
 export const Options = ({
   count,
@@ -23,7 +24,7 @@ export const Options = ({
         state={generatorType}
         className="type-select"
       />
-      <span> HTML tag:</span>
+      <span>HTML tag:</span>
       <CustomSelector
         placeholder="Select tag"
         options={['None', 'p', 'h1', 'h2', 'h3', 'h4']}

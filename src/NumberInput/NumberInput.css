@@ -1,47 +1,38 @@
 .counter-div {
-  width: 80px;
-  height: 50px;
+  width: 62px;
   display: flex;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 20px 30 px rgba(0, 0, 0, 0.1);
+  max-height: 50px;
   margin-right: 1em;
 }
 
-input {
-  border: none;
-  text-align: center;
-  font-size: 15px;
-  background-color: #fff;
-  color: #202030;
+input[type='number'] {
   width: 40px;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 2px #3dc0ee;
+  font-size: 17px;
+}
+
+.add-btn {
+  margin-bottom: 2px;
 }
 
 .minus-btn,
 .add-btn {
-  color: #3264fe;
-  background-color: #fff;
   border: none;
-  min-width: 20px;
-  font-size: 20px;
+  width: 20px;
+  height: 23px;
+  margin-left: 2px;
+  background-color: #3dc0ee;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
   cursor: pointer;
-  z-index: 5;
-}
-
-.minus-btn {
-  border-radius: 25px 0px 0 25px;
-}
-
-.add-btn {
-  border-radius: 0 25px 25px 0;
 }
 
 .minus-btn:hover,
 .add-btn:hover {
-  color: #fff;
-  background-color: #3264fe;
-  border: none;
-  min-width: 20px;
-  font-size: 20px;
-  cursor: pointer;
+  color: #3dc0ee;
+  background-color: #fff;
+  border: 1px solid #3dc0ee;
 }

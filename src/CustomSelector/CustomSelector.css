@@ -6,9 +6,14 @@
   height: 100%;
 }
 
+.select-box {
+  margin-right: 1em;
+}
+
 .select-box .options-container {
-  background-color: #2f3640;
+  background-color: #2aa2ce;
   color: #f5f6fa;
+  border: 2px solid #2aa2ce;
   transition: all 0.4s;
   border-radius: 3px;
   max-height: 150px;
@@ -17,6 +22,7 @@
   order: 1;
   z-index: 3;
   overflow-y: scroll;
+  border-radius: 10px;
 }
 
 .option,
@@ -25,6 +31,7 @@
   min-height: 50px;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 
 .options-container label {
@@ -34,12 +41,14 @@
   font-size: 0.8rem;
 }
 .selected {
-  background-color: #2f3640;
-  border-radius: 3px;
-  color: #f5f6fa;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #3dc0ee;
+  color: #3dc0ee;
   width: 100px;
   height: 50px;
   margin-bottom: 1px;
+  font-weight: 600;
 }
 
 .select-box .option,
@@ -48,7 +57,8 @@
 }
 
 .select-box .option:hover {
-  background-color: #414b57;
+  background-color: #fff;
+  color: #3dc0ee;
 }
 
 .select-box label {
