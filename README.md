@@ -1,4 +1,4 @@
-https://adm-lorem-ispum.netlify.app/
+https://adm-lorem-ipsum.netlify.app/
 
 # Getting Started with Create React App
 
