@@ -1,4 +1,4 @@
-https://eloquent-dodol-ce3302.netlify.app/
+https://adm-lorem-ispum.netlify.app/
 
 # Getting Started with Create React App
 
